@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        html{
+            background-color: lightgray;
+            margin-left: 15px;
+        }
+        .heading0{
+            margin: 20px;
+            text-align: center;
+            text-decoration: underline;
+        }
+        .heading1{
+            border: 8px solid lightgoldenrodyellow;
+            width:10%;
+            padding-bottom: -10px;
+        }
+        .heading2{
+            border: 8px solid lightgoldenrodyellow;
+            width:21%;
+            height:4%;
+        }
+        .heading3{
+            border: 8px solid lightgoldenrodyellow;
+            width:17%;
+            height:4%;
+        }
+        .image1{
+            float: left;
+            padding:5px;
+        }
+        .image2{
+            float: left;
+            padding:5px;
+        }
+        .image3{
+            float: left;
+            padding:5px;
+        }
+        .image4{
+            float: left;
+            padding:5px;
+        }
+        .image5{
+            float: left;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading0">
+        <h1>Fast Food Order</h1>
+    </div>
+    
+    <form>
+        <div class=heading1>
+            <h2>Request Info</h2>
+        </div>
+        <label for="fname">Frist Name</label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname" required><br><br>
+
+
+        <label for="em">Enter your email</label><br>
+        <input type="email" id="em" name="email" required><br><br>
+        <label for="pw"> Enter your Password</label><br>
+        <input type="password" id="pw" name="pass" required><br><br>
+
+        <div class="heading2">
+            <h2>Choose Your Fast Food Place</h2>
+        </div>
+        <input type="radio" id="food" name="fast" value="McDonalds">
+        <label for="food">McDonalds</label><br>
+        <input type="radio" id="food1" name="fast" value="Burger King">
+        <label for="food1">Burger King</label><br>
+        <input type="radio" id="food2" name="fast" value="Culvers">
+        <label for="food2">Culvers</label><br>
+        <input type="radio" id="food3" name="fast" value="In-N-Out">
+        <label for="food3">In-N-Out</label><br>
+        <input type="radio" id="food4" name="fast" value="Chick-Fil-A">
+        <label for="food4">Chick-Fil-A</label><br>
+
+        <div class="heading3">
+            <h2>Select Your Food Items</h2> 
+        </div>
+        <input type="checkbox" id="cheesebg" name="chburger" value="Cheese Burger">
+        <label for="cheesebg">In-N-Out Cheese Burger</label><br>
+        <input type="checkbox" id="chickbg" name="chkburger" value="Chicken Burger">
+        <label for="chickbg">Chick-Fil-A Sandwitch</label><br>
+        <input type="checkbox" id="tc" name="taco" value="Taco">
+        <label for="tc">Street Tacos</label><br>
+        <input type="checkbox" id="fr" name="fries" value="Fries">
+        <label for="fr">McDonalds Fries</label><br>
+        <input type="checkbox" id="nc" name="nachos" value="Nachos">
+        <label for="nc">Chillies Nachos</label><br><br>
+
+        <label for="msg">Enter a Message</label><br><br>
+        <textarea id="msg" name="message" rows="10" cols="70">
+        </textarea>
+
+        <br><br>
+
+            <label for="food">Choose a drink:</label>
+            <select name="food" id="drinks">
+                <option value="coke">Coke</option>
+                <option value="pepsi">Pepsi</option>
+                <option value="sprite">Sprite</option>
+                <option value="canda">Canda Dry</option>
+                <option value="coffee">Ice Coffee</option>
+            </select>
+
+        <br>
+        <br>
+
+        <input type="Submit" value="Submit">
+
+
+    </form>
+
+    <div class="image1">
+        <img src="images2/McDonalds logo.jpg" width= "300px" height= "200px" alt="McDonalds"/>
+    </div>  
+
+    <div class="image2">
+        <img src="images2/burger-king logo.jpg" width= "200px" height= "200px" alt="Burger King"/>
+    </div>
+    
+    <div class="image3">
+        <img src="images2/culvers-logo.png" width= "300px" height= "200px" alt="Culvers"/>
+    </div>
+
+    <div class="image4">
+        <img src="images2/InNOut logo.png" width= "300px" height= "200px" alt="In-N-Out"/>
+    </div>
+
+    <div class="image5">
+        <img src="images2/Chick-fil-A Logo.png" width= "300px" height= "200px" alt="Chick-Fil-A"/>
+    </div>
+    
+</body>
+</html>

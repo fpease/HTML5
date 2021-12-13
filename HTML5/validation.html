@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .row{
+            font-size: 18px;
+            margin-left: 300px;
+        }
+        
+        #lname, #fname{
+            margin-left: 50px;
+        }
+
+        #phone{
+            margin-left: 20px;
+        }
+
+        #mail{
+            margin-left: 85px;
+        }
+
+        .order{
+            margin-left: 300px;
+        }
+
+        #dt1{
+            margin-left: 100px;
+        }
+
+        #code{
+            margin-left: 60px;
+        }
+
+        #head{
+            text-align: center;
+        }
+
+        .submit{
+            margin-left: 450px;
+        }
+
+        .radio{
+            margin-left: 425px;
+        }
+
+        .drop{
+            margin-left: 300px;
+        }
+
+        .comments{
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2 id="head">Customer Statisfaction Survey</h2>
+        <br>
+        <div class="row">
+            <label for="fname">First Name</label>
+            <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="First Name"
+                pattern="[A-Z a-z]{1,8}"
+                required>
+        </div>
+        <br>
+
+        <div class="row">
+            <label for="lname">Last Name</label>
+            <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Last Name"
+                pattern="[A-Z a-z]{1,5}"
+                required><br>
+        </div>
+
+        <br>
+        <div class="row">
+            <label for="phone">Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="###-###-####"
+                pattern="[0-9]{3}{[0-9]{3}[0-9]{4}"
+                title=" 3 digit area code"
+                required><br>
+        </div>
+
+        <br>
+        <div class="row">
+            <label for="mail">Email</label>
+            <input
+                type="email"
+                id="mail"
+                name="mail"
+                placeholder="@gmail.com"
+                pattern="^[A-Za-z0-9.]+@[A-Za-z-]+[A-Za-z]{3}+[A-Za-z0-9.]*$"
+                title="must contain @ and .com"
+                required><br>
+        </div>
+
+        <br>
+        <div class="order">
+            <label for="dt1">Date</label>
+            <input type="date" id="dt1" name="dt1">
+        </div>
+
+        <br>
+        <div class="row">
+            <label for="zip">Zip Code</label>
+            <input
+                type="zip"
+                id="code"
+                name="code"
+                placeholder="#####"
+                pattern="[0-9]{5}"
+                title="5 digit zip code"
+                required><br>
+        </div>
+
+        <br>
+
+        <div class="radio">
+        <input type="radio" id="sat" name="satisfied" value="satisfied">
+        <label for="sat">Satisfied</label><br>
+        <input type="radio" id="sat1" name="satisfied" value="not satisfied">
+        <label for="sat1">Not Satisfied</label><br>
+        </div>
+
+        <br>
+        <div class="drop">
+            <label for="find">Where did you find us? </label>
+            <select name="where" id="places">
+            <option value="internet">Internet</option>
+            <option value="news">News Papers</option>
+            <option value="social">Social Media</option>
+            <option value="web">Website</option>
+            <option value="other">Other</option>
+        </select>
+        </div>
+    
+        <br>
+        <div class="comments">
+            <label for="com">Comments</label><br>
+            <textarea id="com" name="comments" rows="10" cols="60">
+            </textarea>
+        </div>
+        <br>
+        <div class="submit">
+            <input type="submit" id="sub" name="sub">
+            <input type="reset" id="re" name="re">
+        </div>
+
+    </form>
+    
+</body>
+</html>
